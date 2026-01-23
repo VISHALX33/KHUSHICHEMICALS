@@ -1,0 +1,124 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ChemicalCompany",
+  "name": "KHUSHI CHEMICALS",
+  "alternateName": "Khushi Chemicals",
+  "url": "https://www.khushichemicals.com",
+  "logo": "https://www.khushichemicals.com/logo.png",
+  "description": "Leading chemical supplier in Neemrana, Ghiloth, Shahjahanpur, Keshwana, Bawal, Manesar, Gurugram, and Bhiwadi. Offering 43+ quality chemical products with ISO certification.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "RIICO Industrial Area, Shahjahanpur",
+    "addressLocality": "Neemrana",
+    "addressRegion": "Rajasthan",
+    "postalCode": "301706",
+    "addressCountry": "IN"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+91-9928949010",
+    "contactType": "sales",
+    "areaServed": ["IN-RJ", "IN-HR"],
+    "availableLanguage": ["English", "Hindi"]
+  },
+  "sameAs": [
+    "https://www.khushichemicals.com"
+  ],
+  "foundingDate": "2017",
+  "slogan": "Your Trusted Partner in Quality Chemical Solutions",
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Neemrana"
+    },
+    {
+      "@type": "City",
+      "name": "Ghiloth"
+    },
+    {
+      "@type": "City",
+      "name": "Shahjahanpur"
+    },
+    {
+      "@type": "City",
+      "name": "Keshwana"
+    },
+    {
+      "@type": "City",
+      "name": "Bawal"
+    },
+    {
+      "@type": "City",
+      "name": "Manesar"
+    },
+    {
+      "@type": "City",
+      "name": "Gurugram"
+    },
+    {
+      "@type": "City",
+      "name": "Bhiwadi"
+    }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Chemical Products",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Nitric Acid"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Caustic Soda Flakes"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Caustic Soda Lye"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Formic Acid"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Acetic Acid Glacial"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Phosphoric Acid"
+        }
+      }
+    ]
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    "opens": "09:00",
+    "closes": "18:00"
+  }
+}
