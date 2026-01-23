@@ -4,55 +4,55 @@ import { useState } from 'react';
 
 const Products = () => {
   const products = [
-    { name: 'Nitric Acid', image: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=400&h=300&fit=crop' },
-    { name: 'Caustic Soda Flakes', image: 'https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?w=400&h=300&fit=crop' },
-    { name: 'Caustic Soda Lye', image: 'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=400&h=300&fit=crop' },
-    { name: 'Formic Acid', image: 'https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=400&h=300&fit=crop' },
-    { name: 'Acetic Acid Glacial/Textile G', image: 'https://images.unsplash.com/photo-1567427018141-0584cfcbf1b8?w=400&h=300&fit=crop' },
-    { name: 'Phosphoric Acid', image: 'https://images.unsplash.com/photo-1614935151651-0bea6508db6b?w=400&h=300&fit=crop' },
-    { name: 'Ammonia Liqure', image: 'https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?w=400&h=300&fit=crop' },
-    { name: 'Polly Aluminium Chloride', image: 'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=400&h=300&fit=crop' },
-    { name: 'Ferric Chloride powder and Liqure', image: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=400&h=300&fit=crop' },
-    { name: 'Common Salt', image: 'https://images.unsplash.com/photo-1606170033648-5d55a3eac2c8?w=400&h=300&fit=crop' },
-    { name: 'Global Salt', image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400&h=300&fit=crop' },
-    { name: 'Hydrated Lime', image: 'https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?w=400&h=300&fit=crop' },
-    { name: 'Sodium Meta Bi Sulphate', image: 'https://images.unsplash.com/photo-1614935151651-0bea6508db6b?w=400&h=300&fit=crop' },
-    { name: 'Sodium Hypo Chloride', image: 'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=400&h=300&fit=crop' },
-    { name: 'Bleaching Powder', image: 'https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?w=400&h=300&fit=crop' },
-    { name: 'Tri Sodium Phosphate', image: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=400&h=300&fit=crop' },
-    { name: 'Soda Ash Dense/Light/Bi Carbonate', image: 'https://images.unsplash.com/photo-1567427018141-0584cfcbf1b8?w=400&h=300&fit=crop' },
-    { name: 'Hydrochloric Acid', image: 'https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=400&h=300&fit=crop' },
-    { name: 'Nitric Acid (LR)', image: 'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=400&h=300&fit=crop' },
-    { name: 'Glucose', image: 'https://images.unsplash.com/photo-1606170033648-5d55a3eac2c8?w=400&h=300&fit=crop' },
-    { name: 'Polly Electrollite', image: 'https://images.unsplash.com/photo-1614935151651-0bea6508db6b?w=400&h=300&fit=crop' },
-    { name: 'Ferrious Sulphate', image: 'https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?w=400&h=300&fit=crop' },
-    { name: 'Caustic Soda Prills', image: 'https://images.unsplash.com/photo-1567427018141-0584cfcbf1b8?w=400&h=300&fit=crop' },
-    { name: 'Caustic Potash Flakes', image: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=400&h=300&fit=crop' },
-    { name: 'Methyle Chloride', image: 'https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=400&h=300&fit=crop' },
-    { name: 'Methylene Chloride', image: 'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=400&h=300&fit=crop' },
-    { name: 'Carbon Tetrachloride', image: 'https://images.unsplash.com/photo-1614935151651-0bea6508db6b?w=400&h=300&fit=crop' },
-    { name: 'Hydrogen Per Oxide', image: 'https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?w=400&h=300&fit=crop' },
-    { name: 'Bleaching powder', image: 'https://images.unsplash.com/photo-1567427018141-0584cfcbf1b8?w=400&h=300&fit=crop' },
-    { name: 'Calcium Chloride Flakes', image: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=400&h=300&fit=crop' },
-    { name: 'Calcium Chloride Powder', image: 'https://images.unsplash.com/photo-1606170033648-5d55a3eac2c8?w=400&h=300&fit=crop' },
-    { name: 'Dilute Sulphuric Acid', image: 'https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=400&h=300&fit=crop' },
-    { name: 'Aluminium Chloride Anhydrous', image: 'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=400&h=300&fit=crop' },
-    { name: 'Stable Bleaching Powder', image: 'https://images.unsplash.com/photo-1614935151651-0bea6508db6b?w=400&h=300&fit=crop' },
-    { name: 'Maize/Paper Starch', image: 'https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?w=400&h=300&fit=crop' },
-    { name: 'Acid Sulry', image: 'https://images.unsplash.com/photo-1567427018141-0584cfcbf1b8?w=400&h=300&fit=crop' },
-    { name: 'Ammonia Bi Cab & Citric Acid', image: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=400&h=300&fit=crop' },
-    { name: 'Sodium Nitrate & Nitri', image: 'https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=400&h=300&fit=crop' },
-    { name: 'Malt Extract & lecithin', image: 'https://images.unsplash.com/photo-1606170033648-5d55a3eac2c8?w=400&h=300&fit=crop' },
-    { name: 'Coco powder & SMP', image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400&h=300&fit=crop' },
-    { name: 'Chlorinated paraffin', image: 'https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=400&h=300&fit=crop' },
-    { name: 'Sulphuric Acid', image: 'https://images.unsplash.com/photo-1614935151651-0bea6508db6b?w=400&h=300&fit=crop' },
-    { name: 'Methanol', image: 'https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?w=400&h=300&fit=crop' }
+    'Nitric Acid',
+    'Caustic Soda Flakes',
+    'Caustic Soda Lye',
+    'Formic Acid',
+    'Acetic Acid Glacial/Textile G',
+    'Phosphoric Acid',
+    'Ammonia Liqure',
+    'Polly Aluminium Chloride',
+    'Ferric Chloride powder and Liqure',
+    'Common Salt',
+    'Global Salt',
+    'Hydrated Lime',
+    'Sodium Meta Bi Sulphate',
+    'Sodium Hypo Chloride',
+    'Bleaching Powder',
+    'Tri Sodium Phosphate',
+    'Soda Ash Dense/Light/Bi Carbonate',
+    'Hydrochloric Acid',
+    'Nitric Acid (LR)',
+    'Glucose',
+    'Polly Electrollite',
+    'Ferrious Sulphate',
+    'Caustic Soda Prills',
+    'Caustic Potash Flakes',
+    'Methyle Chloride',
+    'Methylene Chloride',
+    'Carbon Tetrachloride',
+    'Hydrogen Per Oxide',
+    'Bleaching powder',
+    'Calcium Chloride Flakes',
+    'Calcium Chloride Powder',
+    'Dilute Sulphuric Acid',
+    'Aluminium Chloride Anhydrous',
+    'Stable Bleaching Powder',
+    'Maize/Paper Starch',
+    'Acid Sulry',
+    'Ammonia Bi Cab & Citric Acid',
+    'Sodium Nitrate & Nitri',
+    'Malt Extract & lecithin',
+    'Coco powder & SMP',
+    'Chlorinated paraffin',
+    'Sulphuric Acid',
+    'Methanol'
   ];
 
   const [searchTerm, setSearchTerm] = useState('');
   
   const filteredProducts = products.filter(product =>
-    product.name.toLowerCase().includes(searchTerm.toLowerCase())
+    product.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
@@ -97,34 +97,60 @@ const Products = () => {
           </div>
 
           {/* Products Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {filteredProducts.map((product, index) => (
               <div 
                 key={index}
-                className="bg-white rounded-lg shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1 overflow-hidden"
+                className={`group relative bg-gradient-to-br ${
+                  index % 6 === 0 ? 'from-green-50 to-green-100' :
+                  index % 6 === 1 ? 'from-blue-50 to-blue-100' :
+                  index % 6 === 2 ? 'from-teal-50 to-teal-100' :
+                  index % 6 === 3 ? 'from-cyan-50 to-cyan-100' :
+                  index % 6 === 4 ? 'from-emerald-50 to-emerald-100' :
+                  'from-indigo-50 to-indigo-100'
+                } rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 p-6 border-l-4 ${
+                  index % 6 === 0 ? 'border-green-500' :
+                  index % 6 === 1 ? 'border-blue-500' :
+                  index % 6 === 2 ? 'border-teal-500' :
+                  index % 6 === 3 ? 'border-cyan-500' :
+                  index % 6 === 4 ? 'border-emerald-500' :
+                  'border-indigo-500'
+                }`}
               >
-                <div className="h-48 relative overflow-hidden">
-                  <img 
-                    src={product.image} 
-                    alt={product.name}
-                    className="w-full h-full object-cover"
-                    onError={(e) => {
-                      e.target.onerror = null;
-                      e.target.src = 'https://via.placeholder.com/400x300/059669/ffffff?text=Chemical+Product';
-                    }}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                </div>
-                <div className="p-6">
-                  <div className="flex items-center space-x-3 mb-3">
-                    <div className="bg-gradient-to-br from-green-500 to-blue-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0">
-                      {index + 1}
+                <div className="flex items-start space-x-4">
+                  <div className={`flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-br ${
+                    index % 6 === 0 ? 'from-green-500 to-green-600' :
+                    index % 6 === 1 ? 'from-blue-500 to-blue-600' :
+                    index % 6 === 2 ? 'from-teal-500 to-teal-600' :
+                    index % 6 === 3 ? 'from-cyan-500 to-cyan-600' :
+                    index % 6 === 4 ? 'from-emerald-500 to-emerald-600' :
+                    'from-indigo-500 to-indigo-600'
+                  } flex items-center justify-center text-white font-bold text-lg shadow-lg`}>
+                    {index + 1}
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-lg font-bold text-gray-800 mb-2 group-hover:text-green-700 transition-colors">
+                      {product}
+                    </h3>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-white text-gray-700 shadow-sm">
+                        <FontAwesomeIcon icon={faFlask} className="mr-1 text-green-600" />
+                        Tanker
+                      </span>
+                      <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-white text-gray-700 shadow-sm">
+                        <FontAwesomeIcon icon={faFlask} className="mr-1 text-blue-600" />
+                        Drum
+                      </span>
+                      <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-white text-gray-700 shadow-sm">
+                        <FontAwesomeIcon icon={faFlask} className="mr-1 text-teal-600" />
+                        Bags
+                      </span>
                     </div>
-                    <h3 className="text-lg font-semibold text-gray-800">{product.name}</h3>
                   </div>
-                  <div className="text-sm text-gray-600">
-                    Available in Tanker, Drum & Bags
-                  </div>
+                </div>
+                {/* Decorative element */}
+                <div className="absolute top-2 right-2 opacity-10 group-hover:opacity-20 transition-opacity">
+                  <FontAwesomeIcon icon={faFlask} className="text-4xl text-gray-800" />
                 </div>
               </div>
             ))}

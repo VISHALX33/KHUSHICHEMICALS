@@ -26,14 +26,26 @@ const Contact = () => {
   return (
     <div>
       {/* Header */}
-      <section className="bg-gradient-to-r from-green-600 to-blue-600 text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl font-bold mb-4">Contact Us</h1>
-          <p className="text-xl text-green-100">
+      <section className="relative bg-gradient-to-r from-green-600 to-blue-600 text-white py-16 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img 
+            src="https://images.unsplash.com/photo-1534536281715-e28d76689b4d?w=1200&h=600&fit=crop" 
+            alt="Contact Background" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-green-600/90 to-blue-600/90"></div>
+        </div>
+        
+        {/* Content */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <h1 className="text-5xl font-bold mb-4 drop-shadow-lg">Contact Us</h1>
+          <p className="text-xl text-green-100 drop-shadow-md">
             Get in Touch with KHUSHI CHEMICALS
           </p>
         </div>
       </section>
+      
 
       {/* Contact Information & Form */}
       <section className="py-16 bg-white">
@@ -70,7 +82,7 @@ const Contact = () => {
                   <FontAwesomeIcon icon={faEnvelope} className="text-3xl text-green-600 mt-1" />
                   <div>
                     <h3 className="text-xl font-semibold text-gray-800 mb-2">Email</h3>
-                    <p className="text-gray-700">contact@khushichemical.com</p>
+                    <p className="text-gray-700">khushichem2023@gmail.com</p>
                   </div>
                 </div>
 

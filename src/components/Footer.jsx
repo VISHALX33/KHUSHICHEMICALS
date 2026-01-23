@@ -64,14 +64,29 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Resources */}
+          {/* Contact */}
           <div>
-            <h4 className="text-white font-semibold mb-4">Resources</h4>
-            <ul className="space-y-2 text-sm">
-              <li className="hover:text-white transition cursor-pointer">Quality Standards</li>
-              <li className="hover:text-white transition cursor-pointer">ISO Certification</li>
-              <li className="hover:text-white transition cursor-pointer">Safety Guidelines</li>
-              <li className="hover:text-white transition cursor-pointer">Privacy Policy</li>
+            <h4 className="text-white font-semibold mb-4">Contact Us</h4>
+            <ul className="space-y-3 text-sm">
+              <li className="flex items-start gap-2">
+                <FontAwesomeIcon icon={faLocationDot} className="text-green-400 mt-1 flex-shrink-0" />
+                <span className="leading-tight">
+                  Shahjahanpur, Neemrana<br />
+                  Rajasthan - 301706
+                </span>
+              </li>
+              <li className="flex items-center gap-2">
+                <FontAwesomeIcon icon={faPhone} className="text-green-400 flex-shrink-0" />
+                <a href="tel:+919928949010" className="hover:text-white transition">
+                  +91 99289 49010
+                </a>
+              </li>
+              <li className="flex items-center gap-2">
+                <FontAwesomeIcon icon={faEnvelope} className="text-green-400 flex-shrink-0" />
+                <a href="mailto:khushichem2023@gmail.com" className="hover:text-white transition break-all">
+                  khushichem2023@gmail.com
+                </a>
+              </li>
             </ul>
           </div>
         </div>

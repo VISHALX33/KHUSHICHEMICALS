@@ -6,9 +6,10 @@ const Gallery = () => {
     <div>
       {/* Header */}
       <section className="relative bg-gradient-to-r from-green-600 to-blue-600 text-white py-16 overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
+        <div className="absolute inset-0 opacity-50">
           <img 
-            src="https://res.cloudinary.com/dwq5qifuk/image/upload/v1768754606/Gemini_Generated_Image_jabgg9jabgg9jabg_itgqof.png" 
+           src="https://res.cloudinary.com/dwq5qifuk/image/upload/v1769141335/10_lwhhy9.jpg" 
+
             alt="Gallery Background" 
             className="w-full h-full object-cover"
           />
@@ -40,7 +41,7 @@ const Gallery = () => {
             {/* Large horizontal image - Hero */}
             <div className="col-span-4 md:col-span-8 lg:col-span-8 row-span-2 overflow-hidden rounded-xl shadow-lg group relative">
               <img 
-                src="https://res.cloudinary.com/dwq5qifuk/image/upload/v1768754606/Gemini_Generated_Image_jabgg9jabgg9jabg_itgqof.png" 
+                src="https://res.cloudinary.com/dwq5qifuk/image/upload/v1769141335/11_cwunbn.jpg" 
                 alt="Chemical Manufacturing Facility" 
                 className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
               />
@@ -55,7 +56,7 @@ const Gallery = () => {
             {/* Tall vertical image */}
             <div className="col-span-4 lg:col-span-4 row-span-2 overflow-hidden rounded-xl shadow-lg group relative">
               <img 
-                src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=400&h=600&fit=crop" 
+                src="https://res.cloudinary.com/dwq5qifuk/image/upload/v1769141335/10_lwhhy9.jpg" 
                 alt="Quality Control Laboratory" 
                 className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
               />
@@ -70,7 +71,7 @@ const Gallery = () => {
             {/* Small square image */}
             <div className="col-span-2 md:col-span-4 lg:col-span-3 row-span-1 overflow-hidden rounded-xl shadow-lg group relative">
               <img 
-                src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=300&h=300&fit=crop" 
+                src="https://res.cloudinary.com/dwq5qifuk/image/upload/v1769141335/3_zzwrrk.jpg" 
                 alt="Chemical Storage Tanks" 
                 className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
               />
@@ -82,7 +83,7 @@ const Gallery = () => {
             {/* Wide horizontal image */}
             <div className="col-span-2 md:col-span-4 lg:col-span-5 row-span-1 overflow-hidden rounded-xl shadow-lg group relative">
               <img 
-                src="https://images.unsplash.com/photo-1614935151651-0bea6508db6b?w=500&h=300&fit=crop" 
+                src="https://res.cloudinary.com/dwq5qifuk/image/upload/v1769141335/13_q5lmab.jpg" 
                 alt="Industrial Equipment" 
                 className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
               />
@@ -94,7 +95,7 @@ const Gallery = () => {
             {/* Medium square image */}
             <div className="col-span-4 md:col-span-4 lg:col-span-4 row-span-1 overflow-hidden rounded-xl shadow-lg group relative">
               <img 
-                src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=400&h=300&fit=crop" 
+                src="https://res.cloudinary.com/dwq5qifuk/image/upload/v1769141335/12_dxp0rv.jpg" 
                 alt="Warehouse Facility" 
                 className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
               />
@@ -106,7 +107,7 @@ const Gallery = () => {
             {/* Tall image */}
             <div className="col-span-2 md:col-span-4 lg:col-span-4 row-span-2 overflow-hidden rounded-xl shadow-lg group relative">
               <img 
-                src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=400&h=600&fit=crop" 
+                src="https://res.cloudinary.com/dwq5qifuk/image/upload/v1769141336/14_bwa4dt.jpg" 
                 alt="Delivery Fleet" 
                 className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
               />
@@ -121,7 +122,7 @@ const Gallery = () => {
             {/* Wide image */}
             <div className="col-span-2 md:col-span-4 lg:col-span-4 row-span-1 overflow-hidden rounded-xl shadow-lg group relative">
               <img 
-                src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=400&h=300&fit=crop" 
+                src="https://res.cloudinary.com/dwq5qifuk/image/upload/v1769141336/6_noz4ia.jpg" 
                 alt="Eco-Friendly Operations" 
                 className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
               />
@@ -133,7 +134,7 @@ const Gallery = () => {
             {/* Square image */}
             <div className="col-span-2 md:col-span-4 lg:col-span-4 row-span-1 overflow-hidden rounded-xl shadow-lg group relative">
               <img 
-                src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=400&h=300&fit=crop" 
+                src="https://res.cloudinary.com/dwq5qifuk/image/upload/v1769141336/4_qnn2y9.jpg" 
                 alt="Customer Service Team" 
                 className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
               />
@@ -145,7 +146,7 @@ const Gallery = () => {
             {/* Large horizontal bottom image */}
             <div className="col-span-4 md:col-span-8 lg:col-span-6 row-span-1 overflow-hidden rounded-xl shadow-lg group relative">
               <img 
-                src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=600&h=300&fit=crop" 
+                src="https://res.cloudinary.com/dwq5qifuk/image/upload/v1769141336/2_ygg3bg.jpg" 
                 alt="Office Locations" 
                 className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
               />
@@ -157,7 +158,7 @@ const Gallery = () => {
             {/* Final medium image */}
             <div className="col-span-4 md:col-span-4 lg:col-span-6 row-span-1 overflow-hidden rounded-xl shadow-lg group relative">
               <img 
-                src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=300&fit=crop" 
+                src="https://res.cloudinary.com/dwq5qifuk/image/upload/v1769141337/8_ecspeb.jpg" 
                 alt="Modern Infrastructure" 
                 className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
               />
@@ -169,7 +170,7 @@ const Gallery = () => {
             {/* Additional images for more complete gallery */}
             <div className="col-span-2 md:col-span-4 lg:col-span-3 row-span-1 overflow-hidden rounded-xl shadow-lg group relative">
               <img 
-                src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=300&h=300&fit=crop" 
+                src="https://res.cloudinary.com/dwq5qifuk/image/upload/v1769141336/5_tdcwr3.jpg" 
                 alt="Technology Integration" 
                 className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
               />
@@ -180,7 +181,7 @@ const Gallery = () => {
 
             <div className="col-span-2 md:col-span-4 lg:col-span-5 row-span-1 overflow-hidden rounded-xl shadow-lg group relative">
               <img 
-                src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500&h=300&fit=crop" 
+                src="https://res.cloudinary.com/dwq5qifuk/image/upload/v1769141336/7_z8saix.jpg" 
                 alt="Safety Standards" 
                 className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
               />
@@ -191,7 +192,7 @@ const Gallery = () => {
 
             <div className="col-span-4 md:col-span-4 lg:col-span-4 row-span-1 overflow-hidden rounded-xl shadow-lg group relative">
               <img 
-                src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&h=300&fit=crop" 
+                src="https://res.cloudinary.com/dwq5qifuk/image/upload/v1769141337/9_td3t3u.jpg" 
                 alt="Production Line" 
                 className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
               />

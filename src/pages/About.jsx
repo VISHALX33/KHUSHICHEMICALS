@@ -7,7 +7,7 @@ const About = () => {
       {/* Header */}
       <section className="relative bg-gradient-to-r from-green-600 to-blue-600 text-white py-16 overflow-hidden">
         {/* Background Image */}
-        <div className="absolute inset-0 opacity-20">
+        <div className="absolute inset-0 opacity-50">
           <img 
             src="https://images.unsplash.com/photo-1581093588401-fbb62a02f120?w=1600&h=600&fit=crop" 
             alt="Chemical Industry Background" 

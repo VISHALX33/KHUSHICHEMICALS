@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFlask, faLeaf, faUsers, faAward, faHandshake, faShieldAlt, faTruck, faHeadset, faCertificate, faIndustry, faPills, faNewspaper, faTint, faWineBottle, faShirt } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+import heroVideo from '../assets/textile-chemical-factory.mp4';
 
 const Home = () => {
   return (
@@ -15,10 +16,7 @@ const Home = () => {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-
-            {/* there add the video link which i add in assets folder KC1.mp4 */}
-
-          <source src="assets/KC1.mp4" type="video/mp4" />
+          <source src={heroVideo} type="video/mp4" />
         </video>
         
         {/* Overlay for better text readability */}

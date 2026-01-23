@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
+import ChemicalLoader from './components/ChemicalLoader';
 import Home from './pages/Home';
 import About from './pages/About';
 import Products from './pages/Products';
@@ -12,6 +13,7 @@ import Gallery from './pages/Gallery';
 function App() {
   return (
     <Router>
+      <ChemicalLoader />
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <main className="flex-grow">

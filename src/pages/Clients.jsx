@@ -1,42 +1,68 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBuilding, faHandshake, faAward } from '@fortawesome/free-solid-svg-icons';
+import { faBuilding, faHandshake, faAward , faImages} from '@fortawesome/free-solid-svg-icons';
+import ykkLogo from '../assets/ykk.png';
+import ojiLogo from '../assets/oji.png';
+import daiichaiLogo from '../assets/daiichai.jpg';
+import polylaceLogo from '../assets/polylace.jpg';
+import fosrocLogo from '../assets/fosroc.jpg';
+import styleinLogo from '../assets/stylein.jpg';
+import tonyLogo from '../assets/tony.jpg';
+import globusLogo from '../assets/globus.jpg';
+import sunriseLogo from '../assets/sunrise.jpg';
+import dhanukaLogo from '../assets/dhanuka.png';
+import pragtiLogo from '../assets/pragti.jpg';
+import vrnusLogo from '../assets/vrnus.png';
+import caparoLogo from '../assets/caparo.jpg';
+import denimLogo from '../assets/denim.png';
+import shreenathLogo from '../assets/SHREENATH.png';
+import ozoneLogo from '../assets/ozone.jpg';
+import victora from '../assets/victora.jpg';
+import ourbanner from "../assets/ourC.jpg"
 
 const Clients = () => {
   const clients = [
-    { name: 'YKK INDIA PVT. LTD', image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=300&fit=crop' },
-    { name: 'OJI INDIA PVT. LTD', image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&h=300&fit=crop' },
-    { name: 'DAIICHI N HORIZON AUTOCOMP PVT. LTD', image: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=400&h=300&fit=crop' },
-    { name: 'POLY LACE INDIA PVT. LTD.', image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=300&fit=crop' },
-    { name: 'VICTORA Auto PVT. LTD.', image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=300&fit=crop' },
-    { name: 'FOSROC INDIA PVT. LTD', image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&h=300&fit=crop' },
-    { name: 'STYLEIN INDIA PVT LTD', image: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=400&h=300&fit=crop' },
-    { name: 'MD DYCHEM INDUSTRIES', image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=300&fit=crop' },
-    { name: 'TONY INDUSTRIES PVT.LTD', image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=300&fit=crop' },
-    { name: 'GLOBUS SPRIT LIMITED..', image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&h=300&fit=crop' },
-    { name: 'SUNRISE MILK DAIRY.', image: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=400&h=300&fit=crop' },
-    { name: 'RAMCO INTERNATIONAL LIMITED.', image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=300&fit=crop' },
-    { name: 'DHANUKA LIMITED..', image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=300&fit=crop' },
-    { name: 'PRAGTI ELCTROCOMPVT.LTD .', image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&h=300&fit=crop' },
-    { name: 'VRNUS PACKEGING.', image: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=400&h=300&fit=crop' },
-    { name: 'CAPARO MARUTI. LIMITED', image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=300&fit=crop' },
-    { name: 'DENIM CARE INDUSTRIES', image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=300&fit=crop' },
-    { name: 'SHREENATH LIFE SCIENCE PVT. LTD', image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&h=300&fit=crop' },
-    { name: 'OZONE OVERSEAS PVT LTD', image: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=400&h=300&fit=crop' },
-    { name: 'STYLEIN PVT LTD', image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=300&fit=crop' }
+    { name: 'YKK INDIA PVT. LTD', logo: ykkLogo },
+    { name: 'OJI INDIA PVT. LTD', logo: ojiLogo },
+    { name: 'DAIICHI N HORIZON AUTOCOMP PVT. LTD', logo: daiichaiLogo },
+    { name: 'POLY LACE INDIA PVT. LTD.', logo: polylaceLogo },
+    { name: 'VICTORA Auto PVT. LTD.', logo: victora },
+    { name: 'FOSROC INDIA PVT. LTD', logo: fosrocLogo },
+    { name: 'STYLEIN INDIA PVT LTD', logo: styleinLogo },
+    { name: 'MD DYCHEM INDUSTRIES', logo: '' },
+    { name: 'TONY INDUSTRIES PVT.LTD', logo: tonyLogo },
+    { name: 'GLOBUS SPRIT LIMITED', logo: globusLogo },
+    { name: 'SUNRISE MILK DAIRY', logo: sunriseLogo },
+    { name: 'RAMCO INTERNATIONAL LIMITED', logo: '' },
+    { name: 'DHANUKA LIMITED', logo: dhanukaLogo },
+    { name: 'PRAGTI ELECTROCOMP PVT. LTD', logo: pragtiLogo },
+    { name: 'VRNUS PACKAGING', logo: vrnusLogo },
+    { name: 'CAPARO MARUTI LIMITED', logo: caparoLogo },
+    { name: 'DENIM CARE INDUSTRIES', logo: denimLogo },
+    { name: 'SHREENATH LIFE SCIENCE PVT. LTD', logo: shreenathLogo },
+    { name: 'OZONE OVERSEAS PVT LTD', logo: ozoneLogo },
+    { name: 'STYLEIN PVT LTD', logo: styleinLogo }
   ];
 
   return (
     <div>
       {/* Header */}
-      <section className="bg-gradient-to-r from-green-600 to-blue-600 text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <FontAwesomeIcon icon={faHandshake} className="text-6xl mb-4" />
-          <h1 className="text-5xl font-bold mb-4">Our Valued Clients</h1>
-          <p className="text-xl text-green-100">
-            Building Long-Term Partnerships Based on Trust and Quality
-          </p>
-        </div>
-      </section>
+       <section className="relative bg-gradient-to-r from-green-600 to-blue-600 text-white py-16 overflow-hidden">
+              <div className="absolute inset-0 opacity-50">
+                <img 
+                 src={ourbanner} 
+                  alt="Gallery Background" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                <FontAwesomeIcon icon={faHandshake} className="text-6xl mb-4" />
+                <h1 className="text-5xl font-bold mb-4">Our Valued Clients</h1>
+                <p className="text-xl text-green-100">
+                  EBuilding Long-Term Partnerships Based on Trust and Quality
+                </p>
+              </div>
+            </section>
+      
 
       {/* Introduction */}
       <section className="py-16 bg-white">
@@ -80,37 +106,39 @@ const Clients = () => {
           <h2 className="text-4xl font-bold text-gray-800 mb-4 text-center">Our Client Portfolio</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-green-500 to-blue-500 mx-auto mb-12"></div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* All Clients - Compact Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {clients.map((client, index) => (
               <div 
                 key={index}
-                className="bg-white rounded-lg shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1 overflow-hidden"
+                className="group bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 p-6 flex flex-col items-center justify-center text-center"
               >
-                <div className="h-40 relative overflow-hidden">
-                  <img 
-                    src={client.image} 
-                    alt={client.name}
-                    className="w-full h-full object-cover"
-                    onError={(e) => {
-                      e.target.onerror = null;
-                      e.target.src = 'https://via.placeholder.com/400x300/059669/ffffff?text=Client+Company';
-                    }}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                {/* Logo Container */}
+                <div className="w-full h-24 mb-3 flex items-center justify-center bg-gray-50 rounded-lg overflow-hidden group-hover:bg-gradient-to-br group-hover:from-green-50 group-hover:to-blue-50 transition-all duration-300">
+                  {client.logo ? (
+                    <img 
+                      src={client.logo} 
+                      alt={client.name}
+                      className="max-w-full max-h-full object-contain p-3"
+                    />
+                  ) : (
+                    <FontAwesomeIcon icon={faBuilding} className="text-3xl text-gray-300 group-hover:text-green-600 transition-colors duration-300" />
+                  )}
                 </div>
-                <div className="p-6">
-                  <div className="flex items-center space-x-3 mb-2">
-                    <div className="bg-gradient-to-br from-green-500 to-blue-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm flex-shrink-0">
-                      {index + 1}
-                    </div>
-                    <h3 className="text-base font-semibold text-gray-800 leading-tight">{client.name}</h3>
-                  </div>
-                  <div className="text-sm text-gray-600 mt-2">
-                    Trusted Partner
-                  </div>
-                </div>
+                
+                {/* Client Name */}
+                <h3 className="text-xs font-semibold text-gray-700 leading-tight mb-2 line-clamp-2 group-hover:text-green-600 transition-colors duration-300">
+                  {client.name}
+                </h3>
               </div>
             ))}
+          </div>
+
+          {/* Summary */}
+          <div className="text-center mt-12">
+            <p className="text-gray-600 text-lg">
+              <span className="font-bold text-green-600">{clients.length}+</span> Prestigious clients trust us for their chemical needs
+            </p>
           </div>
         </div>
       </section>
