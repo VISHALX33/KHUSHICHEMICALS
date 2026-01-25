@@ -218,31 +218,80 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Navigation */}
-        {isOpen && (
-          <div className="md:hidden pb-4">
-            {navLinks.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
+        {/* Sidebar Drawer for Mobile */}
+        {/* Sidebar Drawer for Mobile */}
+        {/* Use a wrapper for overlay and sidebar, always mounted for smooth transition */}
+        <div
+          className={`fixed inset-0 z-50 ${isOpen ? 'pointer-events-auto' : 'pointer-events-none'}`}
+          aria-hidden={!isOpen}
+        >
+          {/* Overlay */}
+          <div
+            className={`fixed inset-0  bg-opacity-50 transition-opacity duration-300 ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+            onClick={() => setIsOpen(false)}
+            aria-label="Close sidebar overlay"
+            tabIndex={-1}
+          ></div>
+          {/* Sidebar Drawer (from right) */}
+          <aside
+            className={`fixed top-0 right-0 h-full w-72 max-w-[90vw] bg-white shadow-2xl flex flex-col p-0 transform transition-transform duration-300 ease-in-out
+              ${isOpen ? 'translate-x-0' : 'translate-x-full'}
+              focus:outline-none`}
+            style={{ zIndex: 60 }}
+            role="dialog"
+            aria-modal="true"
+            tabIndex={0}
+            onKeyDown={e => { if (e.key === 'Escape') setIsOpen(false); }}
+          >
+            {/* Header with logo, name, and close button */}
+            <div className="flex items-center justify-between px-6 py-4 border-b border-gray-100">
+              <div className="flex items-center space-x-2">
+                <img src={logo} alt="KHUSHI CHEMICALS Logo" className="h-8 w-auto" />
+                <div className="flex flex-col leading-tight">
+                  <span className="text-xl font-bold text-green-600">KHUSHI</span>
+                  <span className="text-xs font-semibold text-blue-600 tracking-wide">CHEMICALS</span>
+                </div>
+              </div>
+              <button
+                className="text-2xl text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-500"
                 onClick={() => setIsOpen(false)}
-                className={`block py-3 text-lg font-medium ${
-                  isActive(link.path)
-                    ? 'text-green-600 bg-green-50'
-                    : 'text-gray-700 hover:bg-green-50'
-                }`}
+                aria-label="Close menu"
+                tabIndex={0}
               >
-                {link.label}
-              </Link>
-            ))}
-            <button
-              onClick={handleWhatsAppClick}
-              className="w-full mt-3 bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition shadow-lg flex items-center justify-center gap-2"
-            >
-              <FontAwesomeIcon icon={faWhatsapp} className="text-xl" />
-              Let's Connect
-            </button>
-          </div>
-        )}
+                <FontAwesomeIcon icon={faTimes} />
+              </button>
+            </div>
+            <nav className="flex flex-col gap-2 flex-grow p-6">
+              {navLinks.map((link, idx) => (
+                <>
+                  <Link
+                    key={link.path}
+                    to={link.path}
+                    onClick={() => setIsOpen(false)}
+                    className={`py-3 px-2 text-lg font-medium rounded transition-colors duration-150 ${
+                      isActive(link.path)
+                        ? 'text-green-600 bg-green-50'
+                        : 'text-gray-700 hover:bg-green-50'
+                    }`}
+                    tabIndex={0}
+                  >
+                    {link.label}
+                  </Link>
+                  {link.label === 'Contact' && (
+                    <button
+                      onClick={handleWhatsAppClick}
+                      className="mt-2 mb-6 w-full bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition shadow-lg flex items-center justify-center gap-2 focus:outline-none focus:ring-2 focus:ring-green-500"
+                      tabIndex={0}
+                    >
+                      <FontAwesomeIcon icon={faWhatsapp} className="text-xl" />
+                      Let's Connect
+                    </button>
+                  )}
+                </>
+              ))}
+            </nav>
+          </aside>
+        </div>
       </div>
     </nav>
   );
