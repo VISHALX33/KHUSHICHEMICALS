@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   return (
@@ -40,6 +41,17 @@ const Footer = () => {
             >
               read more →
             </a>
+            <div className="mt-4">
+              <a
+                href="https://www.linkedin.com/company/khushi-chemicals/posts/?feedView=all"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-white hover:text-[#004182]"
+                aria-label="LinkedIn"
+              >
+                <FontAwesomeIcon icon={faLinkedin} size="2x" />
+              </a>
+            </div>
           </div>
 
           {/* Discover */}
@@ -75,12 +87,27 @@ const Footer = () => {
                   Rajasthan - 301706
                 </span>
               </li>
-              <li className="flex items-center gap-2">
-                <FontAwesomeIcon icon={faPhone} className="text-green-400 flex-shrink-0" />
-                <a href="tel:+919928949010" className="hover:text-white transition">
-                  +91 99289 49010
-                </a>
-              </li>
+             <li className="flex flex-nowrap items-center gap-4 whitespace-nowrap">
+  <FontAwesomeIcon
+    icon={faPhone}
+    className="text-green-400 flex-shrink-0"
+  />
+
+  <a
+    href="tel:+918000793036"
+    className="hover:text-white transition"
+  >
+    +91 8000793036
+  </a>
+
+  <a
+    href="tel:+919928949010"
+    className="hover:text-white transition"
+  >
+    +91 99289 49010
+  </a>
+</li>
+
               <li className="flex items-center gap-2">
                 <FontAwesomeIcon icon={faEnvelope} className="text-green-400 flex-shrink-0" />
                 <a href="mailto:khushichem2023@gmail.com" className="hover:text-white transition break-all">
@@ -113,14 +140,14 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row justify-between items-center text-xs pt-6 gap-4">
           <p>
-            © {new Date().getFullYear()} KHUSHI CHEMICALS. All rights reserved.
+            © {new Date().getFullYear()} Khushi Chemicals. All Rights Reserved.
+            <span className="mx-2">|</span>
+            <span className="text-green-400">Powered by <a href="https://www.neelxtechnologies.com/" target="_blank" rel="noopener noreferrer" className="hover:underline">NeelX Technologies.</a></span>
           </p>
-          <div className="flex gap-4">
+          <div className="flex gap-4 items-center">
             <span className="hover:text-white cursor-pointer">Terms</span>
             <span className="hover:text-white cursor-pointer">Privacy</span>
-            <span className="hover:text-white cursor-pointer">
-              Compliances
-            </span>
+            <span className="hover:text-white cursor-pointer">Compliances</span>
           </div>
         </div>
       </div>
